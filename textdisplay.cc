@@ -45,7 +45,8 @@ bool TextDisplay::valid(int m) {
 
 char TextDisplay::compare(int i, int j, int d) {
 	int output;
-	int c, r;
+	int c = 0;
+	int r = 0;
 	if (d == 0) {
 		c = i-1;
 		r = j;

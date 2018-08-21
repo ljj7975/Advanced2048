@@ -136,7 +136,7 @@ std::ostream &operator<<(std::ostream &out, const Grid &g) { // calls the TextDi
 }
 
 void Grid::move(int d) {
-	int value;
+	int value = 0;
 	int comp;
 	if (d == 3) {
 		for (int i = 0; i < w; i++) {
@@ -229,7 +229,7 @@ void Grid::move(int d) {
 
 
 int Grid::getNext(int i, int j, int d, bool reset) {
-	int value;
+	int value = 0;
 	if (d == 0) {
 		if (i == w-1) {
 			value = 0;
